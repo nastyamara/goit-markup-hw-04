@@ -126,6 +126,8 @@ padding-bottom: 32px;
 
 .contacts-link {
         color: var(--main-text-color);
+        display: flex;
+        align-items: center;
 }   
 
 .contacts-list {
@@ -139,14 +141,15 @@ padding-bottom: 32px;
     font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        display: flex;
+       
      
     
 }
-.icon-mail {
-    display: inline-flex;
+.icon-contacts {
+   
 fill: var(--main-text-color);
 margin-right: 10px;
+fill: currentColor
 
 
 
@@ -169,7 +172,10 @@ margin-right: 10px;
     max-width: 696px;
 }
 .hero-sec {
+    max-width: 1600px;
     background-color:var(--accent-bgd-color) ;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: 
@@ -377,6 +383,10 @@ align-items: center;
 .client-icon {
     fill: currentColor;
 }
+.clients-link:hover,
+.clients-link:focus {
+border: 1px solid var(--main-acent-color);
+}
 
 
 
@@ -394,8 +404,14 @@ align-items: center;
 .footer {
     background-color:var(--accent-bgd-color) ;
     padding-top: 60px;
-        padding-bottom: 60px;
+    padding-bottom: 60px;
    
+   
+}
+.footer-container {
+display: flex;
+align-items: baseline;
+    gap: 70px;
 }
 
 .logo-studio {
@@ -409,12 +425,41 @@ align-items: center;
         font-size: 26px;
         line-height: 1.19;
         display: inline-block;
-       
     margin-bottom: 20px;
 }
 
 .address-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer-socials {
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--contrast-text-h-color);
+margin-bottom: 20px;
+}
+.socials-link-footer {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        color: var(--contrast-text-h-color);
+        background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background-color: var(--main-acent-color);
+    color: var(--contrast-text-h-color);
+}
+
+.socials-footer-icon {
+    fill: currentColor;
 }
 
 /* portfolio page */
@@ -473,8 +518,8 @@ margin-right: 8px;
  /* margin-right: 30px;
     margin-bottom: 30px; */
  } 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
